@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Employee Leave Management System</h1>
+
+    <!-- Add Employee Section -->
+    <div class="container">
+        <h2>Add Employee</h2>
+        <input type="text" id="empName" placeholder="Employee Name">
+        <input type="number" id="empSalary" placeholder="Monthly Salary">
+        <button onclick="addEmployee()">Add Employee</button>
+    </div>
+
+    <!-- Apply Leave Section -->
+    <div class="container">
+        <h2>Apply Leave</h2>
+        <select id="employeeSelect"></select>
+        <input type="number" id="leaveDays" placeholder="Number of Leave Days">
+        <button onclick="applyLeave()">Apply Leave</button>
+    </div>
+
+    <!-- Employee List -->
+    <div class="container">
+        <h2>Employee Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Leaves Taken</th>
+                    <th>Salary Deduction</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTable"></tbody>
+        </table>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
